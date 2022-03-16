@@ -1,0 +1,97 @@
+body{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin:0;
+    /* background-image: url('https://source.unsplash.com/1920x1080/?weather'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 120%;
+}
+.card {
+    background-color:rgba(0, 0, 0, 0.733);
+    color: white;
+    padding: 2em;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin:1em;
+    font-family: 'Open Sans', sans-serif;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input.search-bar {
+    padding: 7px 16px;
+    border: none;
+    border-radius: 22px;
+    outline:none;
+    width:calc(100% - 100px);
+    font-size: 120%;
+    font-family: inherit;
+}
+button {
+    background: #02020238;
+    color: white;
+    transition: 0.2s ease-in;
+    margin: 1.5em;
+    width: 45.2px;
+    height: 45.2px;
+    border-radius: 35%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+button:hover {
+    background: #61606041;
+
+}
+.weather-icon-description{
+    display:flex;
+    align-items: center;
+}
+h1.temp {
+    margin: 0px;
+    margin-bottom: 0.5em;
+}
+.description {
+    text-transform: capitalize;
+    margin-left: 5px;
+}
+img.icon {
+    width: 5em;
+    height: 5em;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height:20px;
+    position: relative;
+}
+.weather.loading::after{
+    visibility:visible;
+    content: "Loading...";
+    color:white;
+    position: absolute;
+    top:0;
+    left:10px;
+
+}
+/* Responsive Layout */
+@media only screen and (max-width: 500px) {
+    .wind,.humidity{
+        text-align:center;
+        font-size:120%;
+    }
+    
+    .weather-icon-description{
+        justify-content:center;
+    }
+    h1.temp,h2.city{
+        text-align:center; 
+    }
+   
+  
+}
