@@ -83,13 +83,16 @@ img.icon {
 @media only screen and (max-width: 500px) {
     .wind,.humidity{
         text-align:center;
-        font-size:120%;
+        font-size:100%;
     }
-    
+    .card{
+        max-height:360px;
+    }
     .weather-icon-description{
         justify-content:center;
     }
     h1.temp,h2.city{
+        font-size:110%;
         text-align:center; 
     }
    
